@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", georgia;
+}
+body {
+  background: #07aa8c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.wrapper .card {
+  width: 800px;
+  background: #3a3a3a;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  color: white;
+}
+.wrapper .card header {
+  background: white;
+  padding: 15px 20px;
+  color: black;
+}
+.wrapper .card .content {
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.wrapper .card .content h1 {
+  margin-bottom: 5px;
+  margin-top: -30px;
+  font-size: 36px;
+}
+
+.wrapper .card .content .details {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+  text-align: center;
+  margin-left: 30px;
+}
+.wrapper .card .content .details .container h2 {
+  color: rgb(180, 179, 179);
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+.wrapper .card .content .details .container {
+  padding: 0 30px;
+}
+.wrapper .card .content .details .mid-container {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 10px 50px;
+}
+
+.wrapper .card .content .search-field input {
+  padding: 8px 5px;
+  width: 250px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.wrapper .card .content .details .loading-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  border: none;
+  background: snow;
+}
+
+#temperature-format {
+  color: lightblue;
+  padding-left: 8px;
+}

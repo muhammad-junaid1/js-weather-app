@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-App</title>
+    <link rel="stylesheet" type="text/css" href="fa/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section id="weather-app">
+        <div class="wrapper">
+          <div class="card">
+            <header>
+              <h3>Weather App</h3>
+            </header>
+            <div class="content">
+              <img src="" class="weather-icon" alt="" />
+              <br />
+              <h1 class="weather-description"></h1>
+              <h4 class="weather-location"></h4>
+              <div class="loading-overlay">
+                <i class="fa fa-spinner fa-2x fa-spin"></i>
+              </div>
+              <div class="details">
+                <div class="container">
+                  <h2>Wind</h2>
+                  <h3 class="wind"></h3>
+                </div>
+                <div class="container mid-container">
+                  <h2>Temperature</h2>
+                  <h3>
+                    <span class="temperature"></span
+                    ><span id="temperature-format">C</span>
+                  </h3>
+                </div>
+                <div class="container">
+                  <h2>Humidity</h2>
+                  <h3 class="humidity"></h3>
+                </div>
+              </div>
+              <div class="search-field">
+                <form action="/" method="GET" autocomplete="off">
+                  <input
+                    type="text"
+                    name="location"
+                    class="location-input"
+                    placeholder="Enter Location"
+                    value=""
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
